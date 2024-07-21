@@ -1,7 +1,7 @@
 #ifndef _CHECK_DATA_H_
 #define _CHECK_DATA_H_
 
-#include "Linked_List.h"
+#include "../../low_level_layer/Linked_List.h"
 
 /**
  * @brief  : Check if the name contains spaces at the beginning or end.
@@ -56,7 +56,26 @@ Std_ReturnType Check_PhoneNumber(char *PhoneNumber);
  */
 Std_ReturnType Check_Email(char *Email);
 
+
+/**
+ * @brief  Check if an email is already in the linked list.
+ * @param  Email: The email address to be checked.
+ * @return STD_OK if the email is found in the list, otherwise STD_NOT_FOUND.
+ */
+Std_ReturnType Check_Email_In_List(const char *Email) ;
+
+/**
+ * @brief  Check if a phone number is already in the linked list.
+ * @param  PhoneNumber: The phone number to be checked.
+ * @return STD_OK if the phone number is found in the list, otherwise STD_NOT_FOUND.
+ */
+Std_ReturnType Check_PhoneNumber_In_List(const char *PhoneNumber) ;
+
 #endif // CHECK_FUNCTIONS_H
+
+
+
+
 
 
 

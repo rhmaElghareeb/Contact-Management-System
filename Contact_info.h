@@ -1,8 +1,9 @@
-ifndef _CONTACT_INFO_H_
+#ifndef _CONTACT_INFO_H_
 #define _CONTACT_INFO_H_
 
 
-#include "Linked_List.h"
+#include "../../low_level_layer/Linked_List.h"
+
 
 #define MAX_CONTACTS 5
 
@@ -10,7 +11,6 @@ ifndef _CONTACT_INFO_H_
 #define PHONE_NUMBER_NOT_EXIST 0
 #define EMAIL_EXIST 1
 #define EMAIL_NOT_EXIST 0
-
 
 
 /**
@@ -90,6 +90,15 @@ Std_ReturnType  Contact_Search_Phone_Number(char* PhoneNumber, char* Returned_In
  * @return : (STD_OK) if the Email is found, (STD_NOT_FOUND) if not found, (STD_ERROR) if the operation fault.
  */
 Std_ReturnType Contact_Search_Email(char* Email, char* Returned_Index);
+
+
+
+
+
+
+
+
+
 
 
 
